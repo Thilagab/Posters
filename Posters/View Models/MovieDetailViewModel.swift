@@ -9,7 +9,7 @@ import Foundation
 
 class MovieDetailViewModel: ObservableObject {
     
-    var movieDetail: MovieDetail?
+    @Published var movieDetail: MovieDetail?
     
     private var httpClient = HTTPClient()
     
@@ -18,13 +18,15 @@ class MovieDetailViewModel: ObservableObject {
        
     }
     
-    func getDetailByMovie(movieID: String)  {
+    @MainActor func getDetailByMovie(movieID: String)  {
         Task {
             do {
                 let details = try await httpClient.getMovieDetailsBy(movieID: movieID)
+                
                 movieDetail = details
+                print("movie detail: \(movieDetail)")
             } catch {
-                fatalError(" Movie details are not available")
+                print(" Movie details are not available")
             }
         }
         

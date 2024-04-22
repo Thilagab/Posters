@@ -9,15 +9,13 @@ import SwiftUI
 
 struct MovieListView: View {
     @StateObject var movieList = MovieListViewModel()
+   
     @State var searchString = ""
      
-//    init() {
-//        self.movieList = MovieListViewModel()
-//    }
+
     var body: some View {
-        NavigationStack{
-            MovieView(movies: self.movieList.movieViewModel)
-     
+       NavigationStack{
+           MovieView(movies: self.movieList.movieViewModel)
         }
         .searchable(text: $searchString)
             .onSubmit(of:.search) {

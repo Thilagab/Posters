@@ -10,11 +10,13 @@ import SwiftUI
 struct MovieView: View {
    var movies: [MovieViewModel]
     
+   
     var body: some View {
         List{
             ForEach(movies, id:\.movieID) { movie in
                    NavigationLink {
-                       movieDetailView(movieId: movie.movieID)
+                       MovieDetailView(movieId: movie.movieID)
+                      // MovieDetailView(movieId: movie.movieID)
                    } label: {
                        HStack(alignment: .top){
                            AsyncImage(url: URL(string: movie.posterUrl)){image in
