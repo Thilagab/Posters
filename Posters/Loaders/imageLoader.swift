@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+//comments: // 1. Import Foundation for basic data types and networking.
+// 2. Import UIKit for working with images.
+// [bug] : fix the warning is in progress
+
 class ImageLoader: ObservableObject {
     
     @Published var image: UIImage?
