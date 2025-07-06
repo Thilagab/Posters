@@ -15,13 +15,21 @@ import UIKit
 class ImageLoader: ObservableObject {
     
     @Published var image: UIImage?
+    @Published var tempImage: UIImage?
     
     func downloadImage(url: String) {
         
         guard let imageUrl = URL(string: url) else {
             return
         }
+        do {
+            URLSession.shared.dataTask(with: imageUrl)
+            
+        } catch {
+            fatalError("Image URL is not valid: \(url)")
+        }   // This line is not necessary, but it ensures the URLSession is initialized
         
+      
         Task {
             URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
                 
