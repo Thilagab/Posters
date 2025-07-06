@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095C39772E19FE94009CFC0E /* Test_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C39762E19FE94009CFC0E /* Test_Screen.swift */; };
 		099A7F652BC1486D00FF1248 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099A7F642BC1486D00FF1248 /* MovieListView.swift */; };
 		099A7F672BC1495300FF1248 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099A7F662BC1495300FF1248 /* MovieView.swift */; };
 		09BDE5932BC00C8300D6FDFB /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BDE5922BC00C8300D6FDFB /* MovieListViewModel.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		095C39762E19FE94009CFC0E /* Test_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Screen.swift; sourceTree = "<group>"; };
 		099A7F642BC1486D00FF1248 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		099A7F662BC1495300FF1248 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		09BDE5912BBF7E7D00D6FDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				099A7F642BC1486D00FF1248 /* MovieListView.swift */,
 				099A7F662BC1495300FF1248 /* MovieView.swift */,
 				09BF36182BC626AB00D56F14 /* MovieDetailView.swift */,
+				095C39762E19FE94009CFC0E /* Test_Screen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09BF36192BC626AB00D56F14 /* MovieDetailView.swift in Sources */,
+				095C39772E19FE94009CFC0E /* Test_Screen.swift in Sources */,
 				09C5DCE92BBEB05D00168F0D /* Movie.swift in Sources */,
 				09C5DCE72BBE8E1E00168F0D /* Rating.swift in Sources */,
 				09C5DCEB2BBEB4E700168F0D /* HTTPClient.swift in Sources */,

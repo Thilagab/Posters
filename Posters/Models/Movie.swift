@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+// Model for the movie search response from the OMDB API
+// This model is used to decode the JSON response from the API
+// It contains an array of Movie objects
+// and the CodingKeys enum is used to map the JSON keys to the Swift properties
+
 struct MovieResponse: Codable {
     let movie: [Movie]
 
