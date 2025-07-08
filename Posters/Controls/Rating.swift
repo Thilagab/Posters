@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+//Ratings are used to display the rating of a movie, show, or any other item.
+// This view allows users to see the rating visually represented by stars.
 struct Rating: View {
     
     @Binding var rating: Int?
