@@ -8,6 +8,9 @@
 import SwiftUI
 // comments: // 1. Import SwiftUI for building the user interface.
 // 2. Import Combine for reactive programming and data binding.
+// 3. Import UIKit for working with images.
+import Combine
+import UIKit
 
 struct URLImage: View {
     
