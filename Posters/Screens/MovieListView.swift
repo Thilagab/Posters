@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-
+// // MovieListView is a SwiftUI view that displays a list of movies.
+//// It uses the MovieListViewModel to fetch and manage the movie data.
+///// The view is searchable, allowing users to search for movies by title.
 struct MovieListView: View {
     @StateObject var movieList = MovieListViewModel()
    

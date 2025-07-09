@@ -21,6 +21,7 @@ struct MovieDetailView: View {
                 Text(movieDetailVM.plot)
                 Text("Director").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 Text(movieDetailVM.director)
+                Text("Actor seem`s").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 HStack{
                     Rating(rating: .constant(movieDetailVM.rating))
                     Text("\(movieDetailVM.rating)/5")
@@ -29,7 +30,6 @@ struct MovieDetailView: View {
             }.padding()
         }.onAppear() {
             movieDetailVM.getDetailByMovie(movieID: movieId)
-            print("Details: \(movieDetailVM.movieDetail?.title)")
         }
     }
 }
