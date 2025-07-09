@@ -6,6 +6,8 @@
 //
 
 import Foundation
+// This struct represents the details of a movie.
+// It conforms to the Decodable protocol to allow decoding from JSON.
 
 struct MovieDetail: Decodable {
     let title: String

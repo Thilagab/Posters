@@ -12,6 +12,8 @@ import UIKit
 // This model is used to decode the JSON response from the API
 // It contains an array of Movie objects
 // and the CodingKeys enum is used to map the JSON keys to the Swift properties
+// The movieID is used to uniquely identify each movie
+// The posterUrl is used to display the movie poster image
 
 struct MovieResponse: Codable {
     let movie: [Movie]
